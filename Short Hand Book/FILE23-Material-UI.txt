@@ -1,0 +1,36 @@
+CREATING A PROJECT
+    - npx create-react-app ui-music-player
+
+PACKAGES 
+    - npm i --save react-router-dom react-toastify
+    - npm install @mui/material @emotion/react @emotion/styled
+    - npm install @mui/icons-material
+
+    @EMOTION/REACT 
+        - Emotion is a performant and flexible CSS-in-JS library. 
+
+        - Building on many other CSS-in-JS libraries, it allows you to style apps quickly with string or object styles. 
+
+        EXAMPLE 
+        -  <div css={{color: 'hotpink'}}></div>
+
+    @EMOTION/STYLED 
+        - styled is a way to create React components that have styles attached to them.
+
+        - It's available from @emotion/styled. 
+
+        - styled was heavily inspired by styled-components and glamorous.
+        
+        EXAMPLE
+            import styled from '@emotion/styled'
+
+            const Button = styled.button`
+            color: turquoise;
+            `
+            or
+
+            const Button = styled.button`
+            color: ${props => (props.primary ? 'hotpink' : 'turquoise')};
+            `
+
+            render(<Button>This my button component.</Button>)

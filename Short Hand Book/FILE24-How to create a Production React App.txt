@@ -1,0 +1,24 @@
+STEP-1 :  FIRST YOU COMPLETE THE REACT DEVELOPMENT APPLICATION
+
+STEP-2 : AFTER COMPLETING THE DEVELOPMENT PROCESS 
+	1) OPEN YOUR REACT APPLICATION USING CMD
+	2) USE THE FOLLOWING CMD
+		2.1) npm run build
+		2.2) npm install -g serve
+		2.3) serve -s build
+
+STEP-3 : AFTER USING THE ABOVE COMMANDS, YOU WILL GET THE FOLLOWING OPTIONS
+
+	
+   ┌──────────────────────────────────────────┐
+   │                                          │
+   │   Serving!                               │
+   │                                          │
+   │   - Local:    http://localhost:3000      │
+   │   - Network:  http://192.168.1.11:3000   │
+   │                                          │
+   │   Copied local address to clipboard!     │
+   │                                          │
+   └──────────────────────────────────────────┘
+
+STEP-4 : COPY THIS URL AND CHECKOUT

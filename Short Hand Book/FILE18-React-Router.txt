@@ -1,0 +1,5 @@
+REACT ROUTER 
+    
+    - npm i --save react-router-dom bootstrap
+
+    - After installing above packages go to index.js file and update it.

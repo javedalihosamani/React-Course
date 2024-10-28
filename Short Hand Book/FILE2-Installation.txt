@@ -1,0 +1,35 @@
+REACT INSTALLATION
+	1. We will learn to install REACT APP
+
+	2. We will start with "create-react-app"
+
+	3. Prerequisite
+		a. Editor - Visula Studio Code
+		b. Node - Installed
+		c. npm - not installed
+
+	4. npm install npm -g
+	
+	5. npm install create-react-app -g
+	
+	6. create-react-app --version
+
+	7. Run the command "npx create-react-app <project-name>" to create the react app.
+
+	8. npm start
+		-> Starts the development server.
+
+  	9. npm run build
+    		-> Bundles the app into static files for production.
+
+  	10. npm test
+		-> Starts the test runner.
+
+  	11. npm run eject
+    		-> Removes this tool and copies build dependencies, configuration files and scripts into the app directory. If you do this, you can’t go back!
+
+	12. We suggest that you begin by typing:
+		-> cd class1
+		-> npm start
+
+	Happy hacking!

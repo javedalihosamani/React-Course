@@ -1,0 +1,23 @@
+PROJECT CRUD
+    - npm i --save react-router-dom bootstrap bootstrap-icons axios react-toastify
+
+CREATE SERVER FOLDER UNDER REACT FOLDER
+    - Open Server Folder using cmd.
+    - npm i -g json-server
+    - json-server --watch data.json --port 4000
+
+
+For test case purpose we have declared readValue and submitHandler functions under Create.js file.
+
+After that we remove readValue and submitHandler functions from Create.js file and used under FormValiadte.js file.
+
+And also remove 
+    const [contact, setContact] = useState({
+        name: "",
+        email: "",
+        image: "",
+        mobile: "",
+        address: "",
+    }); from Create.js file because we are returning from FormValiadte.js file. 
+
+npm install --save lodash

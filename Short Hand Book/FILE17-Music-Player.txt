@@ -1,0 +1,36 @@
+npm i --save react-router-dom axios react-toastify history
+npm i --save bootstrap bootstrap-icons
+
+GOTO https://developer.spotify.com/ and do the following steps.
+
+// FOR REGISTRATION
+1) DASHBOARD - Menu (Click)
+
+
+// FOR LOGIN
+2) Under DASHBOARD Page you will get the following section.
+    - Create & manage your Spotify integrations.
+    - Registration done within this section.
+    - After registration again goto the DASHBOARD and click on LOGIN BUTTON
+
+    NOTE - Once you login will get this URL https://developer.spotify.com
+
+
+// FOR TOKEN
+3) DOCS - Menu (Click)
+    - WEB PLAYBACK SDK - Sub-Menu (Under)
+    - Quick start (Click)
+    - Here will get Authenticating with Spotify section. Under this, you will get GET YOUR ACCESS TOKEN button for TOKEN.
+    - Success! Here is your Access Token to use with Spotify
+
+
+// FOR ARTIST API
+4) DOCS - Menu (Click)
+    - WEB API - Sub-Menu (Under)
+    - REFERENCE (Click)
+    - Under this page you will get side Bar Menu and the Name is ENDPOINTS
+
+        1) ENDPOINTS
+            1.1) ARTIST
+            1.1.1) SELECT GET ARTIST
+            - From this you will get the URL.
