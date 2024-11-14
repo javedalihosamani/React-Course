@@ -1,4 +1,4 @@
-import { Counter, MealsApi, Todo, ToggleBG } from './components';
+import { Counter, MealsApi, Pnf, Todo, ToggleBG } from './components';
 import {Header, Footer} from './layout';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 function App() {
@@ -14,6 +14,7 @@ function App() {
             <Route exact path="/todo" element={<Todo />} />
             <Route exact path="/meals" element={<MealsApi />} />
             <Route exact path="/toggle" element={<ToggleBG />} />
+            <Route exact path="/*" element={<Pnf />} />
           </Routes>
         <Footer/>
       </BrowserRouter>
