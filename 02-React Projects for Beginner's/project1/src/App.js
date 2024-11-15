@@ -9,12 +9,12 @@ function App() {
           {/* Your routes go here */}
           <Routes>
             {/* Add more routes as needed */}
-            <Route exact path="/" element={<Counter />} />
-            <Route exact path="/counter" element={<Counter />} />
-            <Route exact path="/todo" element={<Todo />} />
-            <Route exact path="/meals" element={<MealsApi />} />
-            <Route exact path="/toggle" element={<ToggleBG />} />
-            <Route exact path="/*" element={<Pnf />} />
+            <Route path={`/`} element={<Counter />} />
+            <Route path={`/counter`} element={<Counter />} />
+            <Route path={`/todo`} element={<Todo />} />
+            <Route path={`/meals`} element={<MealsApi />} />
+            <Route path={`/toggle`} element={<ToggleBG />} />
+            <Route path={`/*`} element={<Pnf />} />
           </Routes>
         <Footer/>
       </BrowserRouter>
