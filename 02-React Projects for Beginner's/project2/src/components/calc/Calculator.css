@@ -14,43 +14,43 @@ section>div{
   border: 2px solid #ccc;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: rgba(0, 0, 0, 0.655);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 section>div>h1{
-  color: #fff;
-  text-shadow: 1px 1px 1px #000 ;
+  color: #ccc;
   margin-bottom: 20px;
   text-align: center;
 }
+section>div>table{width: 100%;}
 section>div>input{
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   /* background-color: transparent; */
   outline: none;
-  border: 2px solid transparent;
+  border: 2px solid #ccc;
   transition: 2s;
   border-radius: 5px;
   font-size: 20px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
 }
 section>div>input:focus{
   border: 2px solid #000;
 }
 button{
   width: 100%;
-  padding: 20px 40px;
+  padding: 10px 20px;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
+  border-radius: 10px !important;
   font-weight: bold;
+  color: #ccc;
   font-size: 20px;
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 button:hover{
-  background-color: rgba(0, 0, 0, 0.64);
+  background-color:#ccc;
   color: #fff;
 }
 table, td{

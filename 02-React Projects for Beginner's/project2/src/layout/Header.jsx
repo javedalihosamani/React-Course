@@ -5,12 +5,12 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
   return (
     <Fragment>
-        <Navbar expand="md" bg='primary' data-bs-theme="dark" className='shadow'>
+        <Navbar expand="md" bg='secondary' data-bs-theme="dark" className='shadow'>
           <Container>
             <Navbar.Brand>
               <NavLink
-                  to={`counter`} 
-                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none text-white')}>
+                  to={`calc`} 
+                  className={({ isActive }) => (isActive ? 'text-dark px-2 text-decoration-none' : 'px-2 text-decoration-none text-dark')}>
                 React Projects
               </NavLink>
             </Navbar.Brand>
@@ -18,46 +18,28 @@ const Header = () => {
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
               <Nav>
                 <NavLink
-                  to={`counter`} 
-                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none')}>
-                  Counter
+                  to={`calc`} 
+                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none text-dark')}>
+                  Calculator
                 </NavLink>
                 
                 <NavLink 
-                  to={`todo`} 
-                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none')}>
-                  Todo
+                  to={`testimonials`} 
+                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none text-dark')}>
+                  Testimonials
                 </NavLink>
                               
                 <NavLink 
-                  to={`api`} 
-                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none')}>
-                  MealsApi
+                  to={`accordions`} 
+                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none text-dark')}>
+                  Accordions
                 </NavLink>
                                
                 <NavLink 
-                  to={`toggle`} 
-                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none')}>
-                  ToggleBG
-                </NavLink>  
-
-                <NavLink 
-                  to={`testimonials`} 
-                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none')}>
-                  Testimonials
-                </NavLink>   
-
-                <NavLink 
-                  to={`accordion`} 
-                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none')}>
-                  Accordion
-                </NavLink>
-
-                <NavLink 
                   to={`validation`} 
-                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none')}>
-                  Form Validation
-                </NavLink>   
+                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none text-dark')}>
+                  Validation
+                </NavLink>    
               </Nav>
             </Navbar.Collapse>
           </Container>

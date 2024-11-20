@@ -6,8 +6,8 @@ const Footer = () => {
     <Fragment>
         <Container fluid className='shadow'>
             <Row>
-                <Col className='bg-primary p-5 text-center'>
-                    <p className='text-white'>Copyright © 2024 Javed Ali.</p>
+                <Col className='bg-secondary p-5 text-center'>
+                    <p>Copyright © 2025 Javed Ali.</p>
                 </Col>
             </Row>
         </Container>

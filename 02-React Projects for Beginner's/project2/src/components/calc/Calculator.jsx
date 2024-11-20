@@ -28,9 +28,9 @@ const Calculator = () => {
     };
     return(
         <section>
-        <div>
+        <div className="bg-light">
           <h1>CALCULATOR-PROJECT</h1>
-          <input type="text" name="calc" id="calc" value={result} />
+          <input type="text" name="calc" id="calc" value={result} readOnly/>
           <table>
             <tbody>
               <tr>
