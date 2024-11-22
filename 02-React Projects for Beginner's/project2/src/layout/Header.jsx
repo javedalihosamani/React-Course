@@ -1,51 +1,45 @@
-import React, { Fragment } from 'react'
-import { Container, Nav, Navbar } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import React from 'react'
+import { Container, Nav, Navbar, NavbarBrand, NavbarCollapse, NavbarToggle } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <Fragment>
-        <Navbar expand="md" bg='secondary' data-bs-theme="dark" className='shadow'>
-          <Container>
-            <Navbar.Brand>
-              <NavLink
-                  to={`calc`} 
-                  className={({ isActive }) => (isActive ? 'text-dark px-2 text-decoration-none' : 'px-2 text-decoration-none text-dark')}>
-                React Projects
-              </NavLink>
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-              <Nav>
-                <NavLink
-                  to={`calc`} 
-                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none text-dark')}>
-                  Calculator
-                </NavLink>
-                
-                <NavLink 
-                  to={`testimonials`} 
-                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none text-dark')}>
-                  Testimonials
-                </NavLink>
-                              
-                <NavLink 
-                  to={`accordions`} 
-                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none text-dark')}>
-                  Accordions
-                </NavLink>
-                               
-                <NavLink 
-                  to={`validation`} 
-                  className={({ isActive }) => (isActive ? 'text-white px-2 text-decoration-none' : 'px-2 text-decoration-none text-dark')}>
-                  Validation
-                </NavLink>    
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
+    <>
+        <Navbar expand="md" bg='primary' data-bs-theme="dark" className='shadow'>
+            <Container>
+                <NavbarBrand>
+                    <NavLink 
+                        to={`/`}
+                        className={'text-white text-decoration-none'}
+                    >
+                        React Projects
+                    </NavLink>
+                </NavbarBrand>
+                <NavbarToggle />
+                <NavbarCollapse>
+                    <Nav className="ms-auto">
+                        <NavLink 
+                            to={`counter`}
+                            className={({isActive}) => ( isActive ? 'text-white px-2 text-decoration-none' : "px-2 text-decoration-none" )}
+                        >Counter</NavLink>
+                        <NavLink 
+                            to={`todo`}
+                            className={({isActive}) => ( isActive ? 'text-white px-2 text-decoration-none' : "px-2 text-decoration-none" )}
+                        >Todo</NavLink>
+                        <NavLink 
+                            to={`meals`}
+                            className={({isActive}) => ( isActive ? 'text-white px-2 text-decoration-none' : "px-2 text-decoration-none" )}
+                        >MealsAPI</NavLink>
+                        <NavLink 
+                            to={`toggle`}
+                            className={({isActive}) => ( isActive ? 'text-white px-2 text-decoration-none' : "px-2 text-decoration-none" )}
+                        >ToggleBG</NavLink>
+                    </Nav>
+                </NavbarCollapse>
+            </Container>
         </Navbar>
-    </Fragment>
+    </>
   )
 }
 
-export default Header;
+export default Header

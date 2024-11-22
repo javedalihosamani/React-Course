@@ -15,4 +15,4 @@ const Pnf = () => {
   )
 }
 
-export default Pnf;
+export default Pnf

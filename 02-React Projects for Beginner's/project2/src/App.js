@@ -1,23 +1,23 @@
+import { Counter, MealsApi, Pnf, Todo, ToggleBG } from './components';
+import {Header, Footer} from './layout';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import { Accordions, Calc, FormValidation, Pnf, Testimonials } from './components';
-import Header from './layout/Header';
-import Footer from './layout/Footer';
-import {accordionData} from './components/accordions/utils/content';
 function App() {
   return (
     <>
-    <BrowserRouter>
-      <Header/>
-      <Routes>
-        <Route path={`/`} element={<Calc />} />
-        <Route path={`/calc`} element={<Calc />} />
-        <Route path={`/testimonials`} element={<Testimonials />} />
-        <Route path={`/accordions`} element={<Accordions accordion={accordionData} />} />
-        <Route path={`/validation`} element={<FormValidation />} />
-        <Route path={`/*`} element={<Pnf />} />
-      </Routes>
-      <Footer/>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Header />
+          {/* Your routes go here */}
+          <Routes>
+            {/* Add more routes as needed */}
+            <Route path={`/`} element={<Counter />} />
+            <Route path={`/counter`} element={<Counter />} />
+            <Route path={`/todo`} element={<Todo />} />
+            <Route path={`/meals`} element={<MealsApi />} />
+            <Route path={`/toggle`} element={<ToggleBG />} />
+            <Route path={`/*`} element={<Pnf />} />
+          </Routes>
+        <Footer/>
+      </BrowserRouter>
     </>
   );
 }

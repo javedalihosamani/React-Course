@@ -1,5 +1,5 @@
-export { default as Calc } from "./calc/Calculator";
-export { default as Testimonials } from "./testimonials/Testimonials";
-export { default as Accordions } from "./accordions/Accordions";
-export { default as FormValidation } from "./formValidation/FormValidation";
-export { default as Pnf } from './Pnf';
+export { default as Counter } from "./Counter";
+export { default as Todo } from "./Todo";
+export { default as MealsApi } from "./MealsApi";
+export { default as ToggleBG } from "./ToggleBackgroundColor";
+export { default as Pnf } from "./Pnf";
