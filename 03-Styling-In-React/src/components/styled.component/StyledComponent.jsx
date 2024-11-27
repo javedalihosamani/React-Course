@@ -25,7 +25,8 @@ const StyledComponent = () => {
                 <div className="col">
                     <Title>Hello Styled Component</Title>
                     <StyledButton>Styled Button</StyledButton>
-                    <StyledButton changeColor='tryIT'>Styled Button</StyledButton>
+                    <StyledButton changeColor = "tryIT">Styled Button</StyledButton>
+                    
                 </div>
             </div>
         </div>
