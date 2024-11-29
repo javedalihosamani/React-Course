@@ -26,6 +26,30 @@ const Header = () => {
                         to={`/ex3`}
                         className={({isActive}) => ( isActive ? 'text-white px-2 text-decoration-none' : "px-2 text-decoration-none" )}
                         >EX-3</NavLink>
+                        <NavLink 
+                        to={`/ex4`}
+                        className={({isActive}) => ( isActive ? 'text-white px-2 text-decoration-none' : "px-2 text-decoration-none" )}
+                        >EX-4</NavLink>
+                        <NavLink 
+                        to={`/ex5`}
+                        className={({isActive}) => ( isActive ? 'text-white px-2 text-decoration-none' : "px-2 text-decoration-none" )}
+                        >EX-5</NavLink>
+                        <NavLink 
+                        to={`/ex6`}
+                        className={({isActive}) => ( isActive ? 'text-white px-2 text-decoration-none' : "px-2 text-decoration-none" )}
+                        >EX-6</NavLink>
+                        <NavLink 
+                        to={`/ex7`}
+                        className={({isActive}) => ( isActive ? 'text-white px-2 text-decoration-none' : "px-2 text-decoration-none" )}
+                        >EX-7</NavLink>
+                        <NavLink 
+                        to={`/ex8`}
+                        className={({isActive}) => ( isActive ? 'text-white px-2 text-decoration-none' : "px-2 text-decoration-none" )}
+                        >EX-8</NavLink>
+                        <NavLink 
+                        to={`/ex9`}
+                        className={({isActive}) => ( isActive ? 'text-white px-2 text-decoration-none' : "px-2 text-decoration-none" )}
+                        >EX-9</NavLink>
                     </div>
                 </div>
             </div>
