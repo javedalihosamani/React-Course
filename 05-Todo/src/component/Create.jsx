@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react'
+import { insertUsers } from '../db/usersData';
 
 // Create Random User ID
 const getRandom  = () => {
@@ -25,6 +26,7 @@ const Create = () => {
             address: address
         };
         console.log('new contact =', data);
+        insertUsers(data);
     }
   return (
     <Fragment>
