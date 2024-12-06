@@ -34,3 +34,14 @@ export const insertUsers = (user) => {
 export const readAllUsers = () => {
     return usersData;
 }
+
+// Delete user
+export const deleteUser = (userID) => {
+  let exactID = usersData.find(user => user.id === userID);
+  usersData.splice(exactID,1);
+  initUsers(usersData);
+  toast.success('Deleted successfully');
+  setTimeout(() => {
+    window.location.href = "/";
+  }, 4000);
+}

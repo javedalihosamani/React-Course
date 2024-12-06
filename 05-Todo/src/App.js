@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer, Header } from "./layout";
 import { ToastContainer } from "react-toastify";
-import { Home, Create, Pnf } from "./component";
+import { Home, Create, Pnf, Edit } from "./component";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <Route path={`/`} element={<Home/>}/>
         <Route path={`/home`} element={<Home/>}/>
         <Route path={`/create`} element={<Create/>}/>
+        <Route path={`/edit/:id`} element={<Edit/>}/>
         <Route path={`/*`} element={<Pnf/>}/>
       </Routes>
       <Footer/>
