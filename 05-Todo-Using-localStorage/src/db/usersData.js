@@ -32,15 +32,37 @@ export const insertUsers = (user) => {
 
 // Read all users from the local storage
 export const readAllUsers = () => {
-    return usersData;
-}
+  return usersData;
+};
 
-// Delete user
+// Delete Single user
 export const deleteUser = (userID) => {
-  let exactID = usersData.find(user => user.id === userID);
-  usersData.splice(exactID,1);
+  let exactID = usersData.find((user) => user.id === userID);
+  usersData.splice(exactID, 1);
   initUsers(usersData);
-  toast.success('Deleted successfully');
+  toast.success("Deleted successfully");
+  setTimeout(() => {
+    window.location.href = "/";
+  }, 4000);
+};
+
+// Read Single User Data
+export const readSingleUser = (userID) => {
+  return usersData.find((user) => user.id === userID);
+  
+};
+
+// Update Single User
+export const updateSingleUser = (userID, data) => {
+  let exactID = usersData.find((user) => user.id === userID);
+  console.log(exactID);
+  exactID.name = data.name;
+  exactID.email = data.email;
+  exactID.mobile = data.mobile;
+  exactID.image = data.image;
+  exactID.address = data.address;
+  initUsers(usersData);
+  toast.success("User updated successfully");
   setTimeout(() => {
     window.location.href = "/";
   }, 4000);
