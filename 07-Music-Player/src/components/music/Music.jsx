@@ -1,6 +1,8 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import './Music.css';
 import token from './../../token/Token';
+import Artist from '../artist/Artist';
+import Search from './../search/Search';
 
 const URL = 'https://api.spotify.com';
 const Music = () => {
@@ -39,8 +41,18 @@ const Music = () => {
         <div className='container my-5'>
             <div className="row">
                 <div className="col">
-                    <h2 className="text-center">ARTISTS</h2>
+                    <h2 className="text-center text-danger">ARTISTS</h2>
                 </div>
+            </div>
+        </div>
+        <Search searchName={getArtists}/>
+        <div className="container">
+            <div className="row">
+                {
+                    artist.map((item, index) => (
+                        <Artist key={index} {...item} />
+                    ))
+                }
             </div>
         </div>
     </Fragment>
