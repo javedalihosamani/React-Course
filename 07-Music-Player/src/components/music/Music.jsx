@@ -18,7 +18,7 @@ const Music = () => {
           })
           .then(res => res.json())
           .then(out =>{
-            console.log(out.artists.items)
+            /* console.log(out.artists.items) */
             setArtist(out.artists.items);
           }).catch(err=> console.log(err.message));
     };
