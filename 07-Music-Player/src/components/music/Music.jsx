@@ -13,7 +13,7 @@ const Music = () => {
         await fetch(`${URL}/v1/search?q=${artistName}&type=artist`, {
             method: 'GET',
             headers: {
-              Authorization: `Bearer ${token}`
+              Authorization: `Bearer ${token}`,
             }
           })
           .then(res => res.json())
