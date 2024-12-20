@@ -1,0 +1,10 @@
+{
+    "register" : [
+        {
+        "name": "Goutham",
+        "email": "goutham@gmail.com",
+        "mobile": "9876543210",
+        "password": "passowrd"
+        }
+    ]
+}
