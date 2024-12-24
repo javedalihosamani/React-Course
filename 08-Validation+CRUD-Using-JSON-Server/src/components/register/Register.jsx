@@ -24,6 +24,11 @@ const Register = () => {
     }
     //console.table(data);
     await registerUser(data);
+
+    name.current.value = "";
+    email.current.value = "";
+    mobile.current.value = "";
+    password.current.value = "";
   }
 
   return (

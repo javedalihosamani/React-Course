@@ -12,6 +12,9 @@ const Login = () => {
     //console.table('login data =', data);
 
     await loginHandler(data);
+
+    email.current.value = "";
+    password.current.value = "";
   }
 
   return (

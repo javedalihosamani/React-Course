@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { NavLink } from 'react-router-dom';
-
+import { toast } from 'react-toastify';
+import { logoutHandler } from "../components/register/Storage";
 const Header = () => {
+    let loginStatus = localStorage.getItem('loginStatus') || false;
+    console.log(loginStatus);
+    
+    const logout = async () => {
+        if(window.confirm(`Are you sure to logout..?`)){
+            await logoutHandler();
+        } else {
+            toast.warning(`Logout Terminated`);
+        }
+    };
   return (
     <div className='navbar navbar-expand-md navbar-dark bg-secondary shadow mb-5'>
         <div className="container">
@@ -11,14 +22,34 @@ const Header = () => {
             </button>
 
             <div className="collapse navbar-collapse" id="menu">
-                <ul className="navbar-nav ms-auto">
-                    <li className="nav-item">
-                        <NavLink to={`/login`} className={({ isActive }) => (isActive ? 'active nav-link' : 'nav-link')}>Login</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink to={`/register`} className={({ isActive }) => (isActive ? 'active nav-link' : 'nav-link')}>Register</NavLink>
-                    </li>
-                </ul>
+                {
+                    loginStatus ? (
+                        <Fragment>
+                            <ul className="navbar-nav  ms-auto">
+                                <li className="nav-item">
+                                    <NavLink to={`/dashboard`} className={({ isActive }) => (isActive ? 'active nav-link' : 'nav-link')}>Dashboard</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink to={`/create`} className={({ isActive }) => (isActive ? 'active nav-link' : 'nav-link')}>Create</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link btn btn-outline-danger" onClick={logout}>Logout</NavLink>
+                                </li>
+                            </ul>
+                        </Fragment>
+                    ) : (
+                        <Fragment>
+                            <ul className="navbar-nav ms-auto">
+                                <li className="nav-item">
+                                    <NavLink to={`/login`} className={({ isActive }) => (isActive ? 'active nav-link' : 'nav-link')}>Login</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink to={`/register`} className={({ isActive }) => (isActive ? 'active nav-link' : 'nav-link')}>Register</NavLink>
+                                </li>
+                            </ul>
+                        </Fragment>
+                    )
+                }
             </div>
         </div>
     </div>

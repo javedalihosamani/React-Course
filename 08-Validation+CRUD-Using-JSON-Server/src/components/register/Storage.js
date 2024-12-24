@@ -1,22 +1,22 @@
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
-//const navigate = useNavigate();
+const users = [];
+//console.log(users.length);
 
-// Initial data
-const users = JSON.parse(localStorage.getItem("users")) || [];
-//console.log(users);
-
-// Local Storage Function
-const saveUsers = (data) => {
-  localStorage.setItem("users", JSON.stringify(data));
-};
+(async () => {
+  await axios
+  .get("/register")
+  .then((res) => {
+    //console.log(res.data);
+    users.push(...res.data);
+    console.log(users);
+  })
+  .catch((error) => toast.error(error.message));
+})();
 
 // Register Handler
 const registerUser = async (user) => {
-  //console.log("Register", user);
-
   const extEmail = users.find((item) => item.email === user.email);
   const extMobile = users.find((item) => item.mobile === user.mobile);
 
@@ -27,22 +27,15 @@ const registerUser = async (user) => {
     toast.error("Mobile number already exists");
     return;
   } else {
-    //users.push(user);
-    //console.log(users);
-
-    //saveUsers(users);
-
-    //toast.success(`Hi ${user.name} you have registered successfully`);
-
-    await axios.post('/register', user).then(res =>{
-      toast.success("New User Registered");
-      setTimeout(() => {
-        //window.location.href = "/login";
-        //navigate(`/`);
-      }, 4000);
-  }).catch((error)=> toast.error(error.message));
-
-    
+    await axios
+      .post("/register", user)
+      .then((res) => {
+        toast.success(`Hi ${user.name} you have registered successfully`);
+        setTimeout(() => {
+          window.location.href = "/login";
+        }, 4000);
+      })
+      .catch((error) => toast.error(error.message));
   }
 };
 

@@ -1,10 +1,32 @@
 {
-    "register" : [
-        {
-        "name": "Goutham",
-        "email": "goutham@gmail.com",
-        "mobile": "9876543210",
-        "password": "passowrd"
-        }
-    ]
+  "register": [
+    {
+      "name": "Goutham",
+      "email": "goutham@gmail.com",
+      "mobile": "9876543210",
+      "password": "passowrd",
+      "id": "0aae"
+    },
+    {
+      "id": "5cb2",
+      "name": "React",
+      "email": "react@gmail.com",
+      "mobile": "9876543211",
+      "password": "12345"
+    },
+    {
+      "id": "14a3",
+      "name": "Node",
+      "email": "node@gmail.com",
+      "mobile": "9876543212",
+      "password": "12345"
+    },
+    {
+      "id": "a1ad",
+      "name": "Angular",
+      "email": "angular@gmail.com",
+      "mobile": "9876543213",
+      "password": "12345"
+    }
+  ]
 }
