@@ -9,7 +9,16 @@ const Users = (props) => {
     const deleteContact = (id) => {
         //alert(id);
         if(window.confirm(`Do you want to delete the records of ${id}`)){
-            axios.delete(`/contacts/${id}`).then(res=>{
+            axios.delete(`/contacts/${id}`, {
+                headers: {
+                    'Accept': 'application/json',
+                    'Origin': '*'
+                    },
+                proxy: {               
+                host: 'localhost',               
+                port: 4000               
+                }               
+               }).then(res=>{
                 toast.success('Successfully Deleted');
                 setTimeout(()=>{window.location.reload()}, 4000);
             }).catch(error => toast.error(error.message));

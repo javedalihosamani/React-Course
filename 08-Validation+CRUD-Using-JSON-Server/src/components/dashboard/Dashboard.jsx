@@ -20,7 +20,7 @@ const Dashboard = () => {
     <div className="container my-5">
         <div className="row">
             <div className="col">
-                <h1 className="text-secondary text-center">USERS</h1>
+                <h1 className="text-secondary text-center p-4 border rounded bg-light shadow-sm">DASHBOARD</h1>
             </div>
         </div>
         <div className="row">
