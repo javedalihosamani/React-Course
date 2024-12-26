@@ -16,7 +16,7 @@ const Update = () => {
       setContact(res.data);
     })
     .catch(error => toast.error(error.message))
-  }, []);
+  },[params.id, setContact]);
 
   const navigate = useNavigate();
 

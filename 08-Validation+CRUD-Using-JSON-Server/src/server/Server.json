@@ -29,5 +29,22 @@
       "password": "12345"
     }
   ],
-  "contacts": []
+  "contacts": [
+    {
+      "id": "864",
+      "name": "Goutham",
+      "email": "goutham@gmail.com",
+      "image": "https://sund-images.sunnxt.com/72200/1280x720_GouthamNanda_72200_29d288b5-1811-40c2-864c-c5de0ade2bf2.jpg",
+      "mobile": "9876543210",
+      "address": "#123,\nBengaluru"
+    },
+    {
+      "id": "214",
+      "name": "Test",
+      "email": "test@gmail.com",
+      "image": "https://sund-images.sunnxt.com/72200/1280x720_GouthamNanda_72200_29d288b5-1811-40c2-864c-c5de0ade2bf2.jpg",
+      "mobile": "9876543211",
+      "address": "#123,\nBengaluru"
+    }
+  ]
 }
