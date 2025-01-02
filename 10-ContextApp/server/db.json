@@ -1,0 +1,32 @@
+{
+  "register": [
+    {
+      "id": "053c",
+      "name": "Javed",
+      "email": "javed@gmail.com",
+      "mobile": "9876543210",
+      "password": "12345"
+    },
+    {
+      "id": "3dc3",
+      "name": "Mansur",
+      "email": "mansur@gmail.com",
+      "mobile": "9876543210",
+      "password": "12345"
+    },
+    {
+      "id": "d57f",
+      "name": "Raju",
+      "email": "raju@gmail.com",
+      "mobile": "9876543210",
+      "password": "12345"
+    },
+    {
+      "id": "9652",
+      "name": "Sangappa",
+      "email": "sangappa@gmail.com",
+      "mobile": "9876543210",
+      "password": "12345"
+    }
+  ]
+}
